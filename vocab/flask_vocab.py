@@ -181,4 +181,4 @@ if __name__ == "__main__":
         app.logger.setLevel(logging.DEBUG)
         app.logger.info(
             "Opening for global access on port {}".format(CONFIG.PORT))
-    app.run(port=5002, host="0.0.0.0", debug=CONFIG.DEBUG)
+    app.run(port=CONFIG.PORT, host="0.0.0.0", debug=CONFIG.DEBUG)
